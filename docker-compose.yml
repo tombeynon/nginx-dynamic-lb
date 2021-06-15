@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - '100:80'
+    environment:
+      - HOSTS=mysite.com,myothersite.com:1234
