@@ -7,6 +7,6 @@ Set `HOSTS` to a comma separated list of hosts you want to load balance traffic 
 See the included docker-compose.yml, or run with `docker`:
 
 ```
-docker run -e HOSTS=google.com,yahoo.com:1234 -it ghcr.io/tombeynon/nginx-dynamic-lb
+docker run -e HOSTS=google.com,yahoo.com:1234 -p 80:80 -it ghcr.io/tombeynon/nginx-dynamic-lb:v0.0.1
 ```
 
