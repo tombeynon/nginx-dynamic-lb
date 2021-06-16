@@ -8,3 +8,4 @@ services:
       - '100:80'
     environment:
       - HOSTS=mysite.com,myothersite.com:1234
+      - HOST=mylbdomain.com
